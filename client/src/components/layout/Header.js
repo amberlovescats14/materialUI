@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <AppBar position="static">
     <Toolbar>
-    <Typography variant="headline" color="inherit">
+    <Typography variant="h3" color="inherit">
     Responsive h3</Typography>
     {/* <Typography variant="h3">Responsive h3</Typography> */}
 

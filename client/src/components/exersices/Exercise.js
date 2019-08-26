@@ -16,7 +16,7 @@ const Exercise = () => {
   //uses a 12 box layout
   //sm 50%
   return (
-    <Grid container sm={12}>
+    <Grid container >
     <Grid item sm>
       <LeftPain styles={styles.Paper}/>
     </Grid>
