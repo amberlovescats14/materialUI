@@ -7,18 +7,22 @@ const styles = {
   Paper: {
     padding: '20%',
     marginTop: '10',
-    marginBottom: '10'
+    marginBottom: '10',
+    height: '500px',
+    overflowY: 'auto'
   }
 }
 
-const Exercise = () => {
+const Exercise = (props) => {
+  const {category} = props
   //layout basics
   //uses a 12 box layout
   //sm 50%
   return (
     <Grid container >
     <Grid item sm>
-      <LeftPain styles={styles.Paper}/>
+      <LeftPain 
+      categery={category} styles={styles.Paper} exercises={props.exercises}/>
     </Grid>
     <Grid item sm>
     <RightPain styles={styles.Paper}/>

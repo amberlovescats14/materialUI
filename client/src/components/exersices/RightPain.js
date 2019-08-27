@@ -1,12 +1,17 @@
 import React from 'react'
-import {Paper} from '@material-ui/core'
+import {Paper, Typography} from '@material-ui/core'
 
 const RightPain = (props) => {
   const { styles } = props
 
   return (
     <Paper style={styles}>
-      RIGHT PANE
+      <Typography variant="h4">
+        Welcome!
+      </Typography>
+      <Typography variant="subtitle1" style={{marginTop: '10px'}}>
+        Please select an exercise from the list on the left
+      </Typography>
     </Paper>
   )
 }
